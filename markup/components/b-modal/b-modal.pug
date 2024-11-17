@@ -1,0 +1,14 @@
+mixin b-modal(data)
+    +b.b-modal
+        +e.container
+            +e.form
+                form
+                    +e.content
+                        +e.title Начни прямо сейчас!
+                        +e.input
+                            +e.LABEL.label Получи все нужные навыки для заработка на NFT всего за 28 дней!
+                                +e.INPUT.form-control(type="text" placeholder='Ваш email')
+                        +e.call
+                            +e.BUTTON.btn(type='submit') Оплатить
+                            +e.IMG.img(src='__static__img/general/Ellipsegreen.png' alt="...")
+

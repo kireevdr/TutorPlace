@@ -1,0 +1,45 @@
+include ../b-modal/b-modal
+mixin page-header(data)
+    // -
+    //     var data = data || {}
+    //     var modeList = data.modeList || []
+    //     var mode = ''
+    //     modeList.map(n => mode += `_${n} `)
+    +b.page-header(class=mode)
+        .container
+            +e.top
+                +e.top-img
+            +e.top-flex
+                +e.flex-left
+                    +e.ball-logo
+                        img(src='__static__img/general/ellipselogo.png' alt="...")
+                    +e.logo
+                        img(src='__static__img/general/NFT.png' alt="...")
+                +e.flex-right
+                    +e.flex-center
+                        +e.A.top-text(href='/') Главная
+                        +e.A.top-text(href='/') Что даст обучение
+                    +e.A.cabinet-button(href='/') Личный кабинет
+                +e.A.col-burger(href='#callme', data-toggle='modal')
+                    +e.burger-mobile
+                        .gamburger.js-menu
+                            span.gamburger-line1
+                            span.gamburger-line2
+    #callme.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+        .modal-dialog.modal-cabinet.modal-sm(role='document')
+            .modal-content.modal-content_beige.ugol
+                button.close.close-position(type='button', data-dismiss='modal', aria-label='Close')
+                    img(src='__static__img/general/close.png' alt="...")
+                +e.modal-flex
+                    +e.mflex-left
+                        +e.modal-ball
+                            img(src='__static__img/general/ellipselogo.png' alt="...")
+                        +e.modal-logo
+                            img(src='__static__img/general/NFT.png' alt="...")
+                    +e.mflex-right
+                +e.mflex-center
+                    +e.A.modal-text(href='/') Главная
+                    +e.A.modal-text(href='/') Что даст обучение
+                +e.A.modal-button(href='/') Личный кабинет
+
+

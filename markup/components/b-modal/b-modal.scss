@@ -1,0 +1,293 @@
+.modal .close {
+    @include media-breakpoint-down(xs) {
+        width: 17.01px;
+        right: 24.24px;
+        top: 36.24px;
+    }
+    position: absolute;
+    right: 51.24px;
+    top: 45.24px;
+    background: transparent;
+    fill: #FFFFFF;
+    stroke: #FFFFFF;
+    padding: 0;
+    z-index: 15;
+    color: #FFFFFF;
+}
+.modal-content {
+    background: radial-gradient(42.84% 203.07% at 15.58% -40.39%, #323E51 0%, #1D2532 100%);
+}
+.modal-content_beige {
+    @include media-breakpoint-down(xs) {
+        width: 320px;
+        height: 337px;
+    }
+    @include media-breakpoint-down(sm) {
+        max-width: 460px;
+    }
+    @include media-breakpoint-down(lg) {
+
+    }
+    width: 670px;
+    height: 425px;
+    border-radius: 30px;
+}
+.b-modal__container {
+    @include media-breakpoint-down(sm) {
+        max-width: 320px;
+    }
+}
+
+.modal-sm {
+    height: 1030px;
+}
+.modal-backdrop {
+    background: rgba(48, 9, 97, 0.3);
+    backdrop-filter: blur(8.5px);
+}
+.modal-backdrop.show {
+    opacity: 0.97;
+}
+.modal-dialog {
+    display: flex;
+    padding-top: 216px;
+    justify-content: center;
+}
+
+.b-modal__img {
+    @include media-breakpoint-down(xs) {
+        rotate: 90deg;
+        border-radius: 20px;
+        right: 39.09px;
+        top: 35px;
+        height: 343.23px;
+        width: 261px;
+    }
+    z-index: 0;
+    position: absolute;
+    width: 424.93px;
+    height: 386.23px;
+    right: -1.91px;
+    top: 2px;
+    border-radius: 30px;
+}
+.b-modal__ellipse {
+    position: absolute;
+    width: 424.93px;
+    height: 386.23px;
+    right: -156.91px;
+    top: -77px;
+    background: linear-gradient(170.98deg, rgba(195, 243, 58, 0.25) 25.59%, rgba(41, 209, 89, 0.25) 100.44%);
+    filter: blur(86px);
+    transform: rotate(11.97deg);
+    z-index: 0;
+}
+.b-modal__form {
+    @include media-breakpoint-down(xs) {
+        border-radius: 20px;
+        height: 337px;
+    }
+    background: radial-gradient(42.84% 203.07% at 15.58% -40.39%, #323E51 0%, #1D2532 100%);
+    border-radius: 30px;
+    max-width: 670px;
+    max-height: 425px;
+    left: 0px;
+    top: 0px;
+    color: #FFFFFF;
+
+    label {
+        @include media-breakpoint-down(xs) {
+            padding-left: 16px;
+            width: 264px;
+            gap: 25px;
+        }
+        @include media-breakpoint-down(sm) {
+            font-family: "Inter", sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+        }
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 21px;
+        text-align: start;
+        padding-left: 70px;
+        color: #FFFFFF;
+        margin-bottom: 18px;
+    }
+
+    input {
+
+    }
+
+    label {
+
+    }
+
+    .b-checkbox {
+        margin-bottom: g(9);
+        text-align: start;
+
+        label {
+            font-size: 14px;
+            @include media-breakpoint-down(xs) {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.b-modal__form-control {
+    @include media-breakpoint-down(sm) {
+        font-size: 16px;
+        max-width: 288px;
+    }
+
+    width: 471px;
+    display: flex;
+    background: #FFFFFF;
+    border: 1px solid #CDCDCD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 12px 18px 13px;
+    max-height: 41px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: #757575;
+    font-size: 18px;
+    z-index: 1;
+}
+
+.b-modal__label {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 21px;
+    display: flex;
+    flex-direction: column;
+    max-width: 530px;
+    gap: 35px;
+}
+
+.b-modal__input {
+    margin-bottom: g(8);
+}
+
+.b-modal__title {
+    @include media-breakpoint-down(sm) {
+    width: 480px;
+    font-size: 23px;
+    }
+    @include media-breakpoint-down(xs) {
+        padding-left: 16px;
+    }
+    padding-top: 56px;
+    font-family: "Inter", sans-serif;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 45px;
+    padding-left: 70px;
+    padding-right: 40px;
+    margin-bottom: 25px;
+}
+
+.b-modal__btn-text {
+
+    p {
+        margin-bottom: g(5);
+    }
+}
+
+.b-modal__call {
+    @include media-breakpoint-down(xs) {
+    padding-left: 16px;
+}
+    padding-left: 70px;
+    height: 142px;
+}
+
+.b-modal__input {
+    @include media-breakpoint-down(sm) {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+    margin-bottom: g(9);
+    text-align: start;
+    color: #FFFFFF ;
+}
+
+.b-modal__content {
+    @include media-breakpoint-down(sm) {
+        width: 320px;
+    }
+
+}
+
+.b-modal__tel {
+    color: #323232;
+    color: #FFFFFF;
+    font-weight: normal;
+    font-size: 15px;
+    @include link-h;
+}
+
+.b-modal__btn:hover {
+    color: #242424;
+    background: linear-gradient(92.84deg, #1DD844 1.44%, #CBF62E 126.29%);
+    box-shadow: 0px 0px 11px 16px rgba(12, 224, 0, 0.25);
+}
+.b-modal__btn:active {
+    box-shadow: 0px 0px 11px 16px rgba(12, 224, 0, 0.25), inset 0px 6px 4px rgba(0, 0, 0, 0.25);
+}
+.b-modal__btn:disabled {
+    color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 0px 0px rgba(12, 224, 0, 0.25);
+}
+.b-modal__btn {
+    @include media-breakpoint-down(sm) {
+        max-width: 288px;
+        font-size: 16px;
+    }
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(92.84deg, #1DD844 1.44%, #CBF62E 126.29%);
+    box-shadow: 0px 0px 8px 8px rgba(12, 224, 0, 0.25);
+    text-align: center;
+    color: #242424;
+    width: 471px;
+    height: 52px;
+    border-radius: 10px;
+    border: 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 21px;
+    position: fixed;
+}
+
+.b-modal__container {
+    @include media-breakpoint-down(sm) {
+        max-width: 320px;
+    }
+    width: 670px;
+    height: 425px;
+}
+.modal {
+    padding-right: 1px;
+}
+.fade {
+    padding-right: 0px !important;
+}
+.show {
+    padding-right: 3px;
+}
+
+
+
+
+
+

@@ -1,0 +1,37 @@
+include ../page-header/page-header
+mixin b-basic(data)
+    +b.b-basic
+        +e.page-header
+            +page-header
+        .container
+            .row
+                .col-12.col-lg-12.col-md-12.col-sm-12.col-xl-7
+                    +e.header-text Не упусти <br> возможность войти <br> в <b> прибыльную нишу </b>
+                    +e.all
+                        img(src='__static__img/general/MAN 1.png' alt="...")
+                    +e.middle-text Получи все нужные навыки для заработка <br> на NFT всего за 28 дней!
+                    +e.middle-tex Получи все нужные навыки для заработка на NFT всего за 28 дней!
+                    +e.A.button-start(href='#cabinet', data-toggle='modal') Начать зарабатывать на NFT
+                .col-xl-5
+                    +e.image-pig
+                        img(src='__static__img/general/pig.png' alt="...")
+                        +e.header-ellipse
+                        +e.header-img
+                            IMG(src='__static__img/general/man.png' alt="...")
+                            +e.image-41
+                                img(src='__static__img/general/image 41 (1).png' alt="...")
+                            +e.image-money
+                                img(src='__static__img/general/money.png' alt="...")
+                            +e.image-light1
+                                img(src='__static__img/general/Lightning 1.png' alt="...")
+                            +e.image-light2
+                                img(src='__static__img/general/Lightning 2.png' alt="...")
+                            +e.image-ellipse25
+                                img(src='__static__img/general/Ellipse 25 (1).png' alt="...")
+    #cabinet.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+        .modal-dialog.modal-sm(role='document')
+            .modal-content.modal-content_beige
+                button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    img(src='__static__img/general/close.png' alt="...")
+
+                +b-modal
