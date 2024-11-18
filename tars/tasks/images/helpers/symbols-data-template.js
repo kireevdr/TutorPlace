@@ -1,8 +1,15 @@
 __iconsData: {
     <% _.forEach(icons, icon => { %>
-        '<%= icon.name %>': {
+        '<%= icon.name %>'
+    :
+        {
             width: '<%= icon.width %>px',
-            height: '<%= icon.height %>px'
-        },
-    <% }); %>
+                hight
+        :
+            '<%= icon.height %>px'
+        }
+    ,
+        <%
+    });
+%>
 }
