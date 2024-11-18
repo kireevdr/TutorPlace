@@ -87,13 +87,13 @@
 }
 
 .page-header__cabinet-button:hover {
-    border: 1px solid #C3F33B;
+    border-color: #C3F33B;
     color: #C3F33B;
 }
 
 .page-header__cabinet-button:active {
     background: rgba(224, 255, 172, 0.06);
-    border: 1px solid #C3F33B;
+    border-color: #C3F33B;
     backdrop-filter: blur(15px);
     color: #C3F33B;
 }
@@ -214,13 +214,13 @@
 }
 
 .b-basic__modal-button:hover {
-    border: 1px solid #C3F33B;
+    border-color: #C3F33B;
     color: #C3F33B;
 }
 
 .b-basic__modal-button:active {
     background: rgba(224, 255, 172, 0.06);
-    border: 1px solid #C3F33B;
+    border-color: #C3F33B;
     backdrop-filter: blur(15px);
     color: #C3F33B;
 }
