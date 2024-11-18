@@ -4122,6 +4122,27 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.b-intro-simple {
+  padding: 3.6875rem 0 3.25rem;
+  position: relative;
+  z-index: 25;
+  background-size: cover;
+  background-position: center center;
+  min-height: 364px;
+}
+
+@media (max-width: 1309.98px) {
+  .b-intro-simple {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 699.98px) {
+  .b-intro-simple__nav {
+    margin-bottom: var(--g10);
+  }
+}
+
 .b-basic {
   height: 1030px;
   background-color: #1D2532;
@@ -4426,81 +4447,6 @@ h1, h2, h3, h4, h5, h6 {
           transform: rotate(11.97deg);
 }
 
-.b-intro-simple {
-  padding: 3.6875rem 0 3.25rem;
-  position: relative;
-  z-index: 25;
-  background-size: cover;
-  background-position: center center;
-  min-height: 364px;
-}
-
-@media (max-width: 1309.98px) {
-  .b-intro-simple {
-    min-height: 300px;
-  }
-}
-
-@media (max-width: 699.98px) {
-  .b-intro-simple__nav {
-    margin-bottom: var(--g10);
-  }
-}
-
-.b-404 {
-  padding: 0 0 3.125rem;
-  position: relative;
-  color: #58534E;
-}
-
-.b-404__title {
-  font-size: 10rem;
-}
-
-.b-404__text {
-  font-size: 1.875rem;
-  font-weight: 700;
-  margin-bottom: 0.9375rem;
-}
-
-.b-404__help {
-  font-size: 16px;
-  margin-bottom: 1.875rem;
-}
-
-.b-404__btn {
-  display: inline-block;
-  line-height: 1;
-  text-align: center;
-  -webkit-transition: 0.2s background, 0.2s color, 0.2s border;
-  transition: 0.2s background, 0.2s color, 0.2s border;
-  position: relative;
-  cursor: pointer;
-  color: #383431;
-  font-size: 16px;
-  letter-spacing: 1px;
-  font-weight: 700;
-  padding: var(--g6) var(--g10);
-  border: 0.1875rem solid #C4AB54;
-  background: transparent;
-  border-radius: 3px;
-  margin-right: 5px;
-  margin-bottom: 5px;
-}
-
-.b-404__btn:hover {
-  background: #C4AB54;
-  color: #fff;
-}
-
-@media (max-width: 699.98px) {
-  .b-404__btn {
-    width: 100%;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-}
-
 .modal .close {
   position: absolute;
   right: 51.24px;
@@ -4534,14 +4480,14 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 575.98px) {
   .modal-content_beige {
-    width: 320px;
+    width: 304px;
     height: 337px;
   }
 }
 
 @media (max-width: 699.98px) {
   .modal-content_beige {
-    max-width: 460px;
+    max-width: 320px;
   }
 }
 
@@ -4866,13 +4812,58 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 3px;
 }
 
-.b-map {
-  height: 100px;
-  background: #FDF9F6;
+.b-404 {
+  padding: 0 0 3.125rem;
+  position: relative;
+  color: #58534E;
 }
 
-.b-map__map {
-  height: 100%;
+.b-404__title {
+  font-size: 10rem;
+}
+
+.b-404__text {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 0.9375rem;
+}
+
+.b-404__help {
+  font-size: 16px;
+  margin-bottom: 1.875rem;
+}
+
+.b-404__btn {
+  display: inline-block;
+  line-height: 1;
+  text-align: center;
+  -webkit-transition: 0.2s background, 0.2s color, 0.2s border;
+  transition: 0.2s background, 0.2s color, 0.2s border;
+  position: relative;
+  cursor: pointer;
+  color: #383431;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  padding: var(--g6) var(--g10);
+  border: 0.1875rem solid #C4AB54;
+  background: transparent;
+  border-radius: 3px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.b-404__btn:hover {
+  background: #C4AB54;
+  color: #fff;
+}
+
+@media (max-width: 699.98px) {
+  .b-404__btn {
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
 
 .page__b-recomendations {
@@ -5293,255 +5284,13 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.page {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  min-height: 100vh;
-  padding-right: 0px !important;
+.b-map {
+  height: 100px;
+  background: #FDF9F6;
 }
 
-.page.backstop #__bs_notify__ {
-  display: none !important;
-}
-
-.page__b-mortgage-calcul {
-  margin-top: var(--g6);
-}
-
-.page__wrapper {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  position: relative;
-}
-
-.page__b-choice-apart_bg {
-  position: relative;
-}
-
-.page__b-choice-apart_bg:before {
-  content: '';
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  right: 0;
-  height: 100vh;
-  background: url("../img/general/detail-bg.png");
-  background-position: bottom right;
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  pointer-events: none;
-  z-index: -1;
-}
-
-.page__wrapper_realt-bg {
-  position: relative;
-}
-
-.page__wrapper_realt-bg:before {
-  pointer-events: none;
-  content: '';
-  position: absolute;
-  top: 17%;
-  left: 0;
-  right: 0;
-  height: 100vh;
-  background: url("../img/general/detail-bg.png");
-  background-position: bottom right;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.page__content {
-  padding: 3.125rem 0;
-}
-
-.page__gray {
-  background: #F7F7F7;
-}
-
-.page__wrapper {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
-.page__header {
-  position: relative;
-  z-index: 50;
-}
-
-.page__wrapper_bg {
-  position: relative;
-}
-
-.page__wrapper_bg:before {
-  pointer-events: none;
-  content: '';
-  position: absolute;
-  top: 17%;
-  left: 0;
-  right: 0;
-  height: 100vh;
-  background: url("../img/general/detail-bg.png");
-  background-position: bottom right;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.page__b-video-section,
-.page__b-quarter-about {
-  margin: var(--g12) 0;
-}
-
-.page__b-video-section_mt0,
-.page__b-quarter-about_mt0 {
-  margin-top: 0;
-}
-
-.page__b-add,
-.page__b-registration,
-.page__b-about-apartments,
-.page__b-photo-slider,
-.page__b-photo-desc,
-.page__b-about,
-.page__b-purchase,
-.page__b-benefit,
-.page__b-dev-video,
-.page__b-news-inner,
-.page__b-mort-photo,
-.page__b-building,
-.page__b-photo-about,
-.page__b-news,
-.page__b-mort-advantages,
-.page__b-instal-advantages,
-.page__b-excursions,
-.page__b-build-video,
-.page__b-repairs-slider,
-.page__b-realt-advant,
-.page__b-realt-form,
-.page__b-realt-doc,
-.page__b-realt-apart,
-.page__b-apartments-inner,
-.page__b-building-inner,
-.page__b-option-section,
-.page__b-small-text,
-.page__b-3d-tour,
-.page__b-mort-cards,
-.page__b-banners,
-.page__b-photo-desc-about {
-  margin: var(--g12) 0;
-}
-
-.page__b-about-img,
-.page__b-video-img {
-  margin: 0;
-}
-
-.page__b-add1 {
-  padding: var(--g12) 0;
-}
-
-.page__b-distance {
-  margin-top: var(--g12);
-}
-
-.page__b-disc {
-  margin-bottom: var(--g12);
-}
-
-@media print {
-  .b-options-apart__more {
-    display: none;
-  }
-  .b-options-apart__link-content {
-    display: none;
-  }
-  .page-header {
-    display: none;
-  }
-  .page-footer {
-    display: none;
-  }
-  .b-intro-simple {
-    display: none;
-  }
-  .b-options-apart__row {
-    display: block;
-    text-align: left;
-    font-size: 0;
-  }
-  .b-options-apart__row > * {
-    font-size: 16px;
-  }
-  .b-options-apart__col {
-    display: inline-block;
-    page-break-inside: avoid;
-    margin-bottom: 0;
-  }
-  .b-options-apart__col:nth-child(4n):after {
-    content: '';
-    position: absolute;
-    display: block;
-    top: 0;
-    bottom: 0;
-    left: -100vw;
-    right: -100vw;
-    page-break-inside: avoid;
-  }
-  .b-buy__type {
-    padding: 0;
-  }
-  .b-options-apart__social {
-    display: none;
-  }
-  .b-buy__rooms-fav {
-    display: none;
-  }
-  .b-buy__btn {
-    display: none;
-  }
-  .col-6 {
-    max-width: 25%;
-  }
-  .col-lg-6 {
-    max-width: 25%;
-  }
-  .col-md-6 {
-    max-width: 25%;
-  }
-  .container, #fp-nav ul {
-    max-width: 100%;
-  }
-  .b-options-apart__logo {
-    display: block;
-  }
-}
-
-@media (max-width: 991.98px) {
-  .js-print {
-    display: none !important;
-  }
-}
-
-.page__b-option-section_nonres {
-  margin-bottom: 0;
-}
-
-.page__footer {
-  margin-top: 60px;
-}
-
-@media (max-width: 699.98px) {
-  .page__footer {
-    margin-top: 45px;
-  }
+.b-map__map {
+  height: 100%;
 }
 
 .page-header {
@@ -6049,6 +5798,257 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     margin-left: 0 !important;
     margin-right: 0 !important;
+  }
+}
+
+.page {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  padding-right: 0px !important;
+}
+
+.page.backstop #__bs_notify__ {
+  display: none !important;
+}
+
+.page__b-mortgage-calcul {
+  margin-top: var(--g6);
+}
+
+.page__wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  position: relative;
+}
+
+.page__b-choice-apart_bg {
+  position: relative;
+}
+
+.page__b-choice-apart_bg:before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background: url("../img/general/detail-bg.png");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.page__wrapper_realt-bg {
+  position: relative;
+}
+
+.page__wrapper_realt-bg:before {
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  top: 17%;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background: url("../img/general/detail-bg.png");
+  background-position: bottom right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.page__content {
+  padding: 3.125rem 0;
+}
+
+.page__gray {
+  background: #F7F7F7;
+}
+
+.page__wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.page__header {
+  position: relative;
+  z-index: 50;
+}
+
+.page__wrapper_bg {
+  position: relative;
+}
+
+.page__wrapper_bg:before {
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  top: 17%;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background: url("../img/general/detail-bg.png");
+  background-position: bottom right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.page__b-video-section,
+.page__b-quarter-about {
+  margin: var(--g12) 0;
+}
+
+.page__b-video-section_mt0,
+.page__b-quarter-about_mt0 {
+  margin-top: 0;
+}
+
+.page__b-add,
+.page__b-registration,
+.page__b-about-apartments,
+.page__b-photo-slider,
+.page__b-photo-desc,
+.page__b-about,
+.page__b-purchase,
+.page__b-benefit,
+.page__b-dev-video,
+.page__b-news-inner,
+.page__b-mort-photo,
+.page__b-building,
+.page__b-photo-about,
+.page__b-news,
+.page__b-mort-advantages,
+.page__b-instal-advantages,
+.page__b-excursions,
+.page__b-build-video,
+.page__b-repairs-slider,
+.page__b-realt-advant,
+.page__b-realt-form,
+.page__b-realt-doc,
+.page__b-realt-apart,
+.page__b-apartments-inner,
+.page__b-building-inner,
+.page__b-option-section,
+.page__b-small-text,
+.page__b-3d-tour,
+.page__b-mort-cards,
+.page__b-banners,
+.page__b-photo-desc-about {
+  margin: var(--g12) 0;
+}
+
+.page__b-about-img,
+.page__b-video-img {
+  margin: 0;
+}
+
+.page__b-add1 {
+  padding: var(--g12) 0;
+}
+
+.page__b-distance {
+  margin-top: var(--g12);
+}
+
+.page__b-disc {
+  margin-bottom: var(--g12);
+}
+
+@media print {
+  .b-options-apart__more {
+    display: none;
+  }
+  .b-options-apart__link-content {
+    display: none;
+  }
+  .page-header {
+    display: none;
+  }
+  .page-footer {
+    display: none;
+  }
+  .b-intro-simple {
+    display: none;
+  }
+  .b-options-apart__row {
+    display: block;
+    text-align: left;
+    font-size: 0;
+  }
+  .b-options-apart__row > * {
+    font-size: 16px;
+  }
+  .b-options-apart__col {
+    display: inline-block;
+    page-break-inside: avoid;
+    margin-bottom: 0;
+  }
+  .b-options-apart__col:nth-child(4n):after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: -100vw;
+    right: -100vw;
+    page-break-inside: avoid;
+  }
+  .b-buy__type {
+    padding: 0;
+  }
+  .b-options-apart__social {
+    display: none;
+  }
+  .b-buy__rooms-fav {
+    display: none;
+  }
+  .b-buy__btn {
+    display: none;
+  }
+  .col-6 {
+    max-width: 25%;
+  }
+  .col-lg-6 {
+    max-width: 25%;
+  }
+  .col-md-6 {
+    max-width: 25%;
+  }
+  .container, #fp-nav ul {
+    max-width: 100%;
+  }
+  .b-options-apart__logo {
+    display: block;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .js-print {
+    display: none !important;
+  }
+}
+
+.page__b-option-section_nonres {
+  margin-bottom: 0;
+}
+
+.page__footer {
+  margin-top: 60px;
+}
+
+@media (max-width: 699.98px) {
+  .page__footer {
+    margin-top: 45px;
   }
 }
 

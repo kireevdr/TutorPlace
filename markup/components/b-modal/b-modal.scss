@@ -19,11 +19,11 @@
 }
 .modal-content_beige {
     @include media-breakpoint-down(xs) {
-        width: 320px;
+        width: 304px;
         height: 337px;
     }
     @include media-breakpoint-down(sm) {
-        max-width: 460px;
+        max-width: 320px;
     }
     @include media-breakpoint-down(lg) {
 
