@@ -3,6 +3,10 @@
 }
 
 .b-recomendations {
+    @include media-breakpoint-down(xs) {
+        margin-bottom: 0px;
+    }
+    margin-bottom: 50px;
 }
 
 .b-recomendations__background {
